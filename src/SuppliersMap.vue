@@ -1,0 +1,12 @@
+<template>
+    <div id="Map">
+        <h1>Carte des fournisseurs</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4626451.614330591!2d137.2703762860102!3d35.92679367435036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1556623613697!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</template>
+<script>
+export default {
+name: 'SuppliersMap'
+
+}
+</script>
