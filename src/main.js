@@ -11,7 +11,9 @@ Vue.use(VueRouter)
 
 Vue.use(VueGoogleMaps, {
     load: {
-        key: 'AIzaSyBQigBAzaRVTRgtfHgmKoj6PHee7DUL76Y',
+        key: 'AIzaSyDf43lPdwlF98RCBsJOFNKOkoEjkwxb5Sc',
+        libraries:'places',
+
     }
 })
 
