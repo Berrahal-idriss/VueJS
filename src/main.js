@@ -4,8 +4,16 @@ import SuppliersMap from "./SuppliersMap";
 import SuppliersList from "./SuppliersList";
 import VueRouter from 'vue-router'
 import Supplier from "./Supplier";
+import * as VueGoogleMaps from 'vue2-google-maps';
+
 
 Vue.use(VueRouter)
+
+Vue.use(VueGoogleMaps, {
+    load: {
+        key: 'AIzaSyBQigBAzaRVTRgtfHgmKoj6PHee7DUL76Y',
+    }
+})
 
 Vue.config.productionTip = false
 

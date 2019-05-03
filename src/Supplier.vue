@@ -3,7 +3,7 @@
     <div id="Supplier">
         <h1>{{name}}</h1>
         <h3 :class="{'text-success' : status , 'text-danger' : !status}">A du stock ?{{status ?'OK':'KO'}}</h3>
-        <h5>Date du dernier relevé des stocks:{{Date()}} </h5>
+        <h5>Date du dernier relevé des stocks:{{checkedAt}} </h5>
     </div>
 
 </template>

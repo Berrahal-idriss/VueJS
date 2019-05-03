@@ -1,18 +1,26 @@
 <template>
     <div id="List">
     <h1>Liste des fournisseurs</h1>
-    <Supplier v-for="(value,key) in suppliers">{{value}}:{{key}}</Supplier>
-
+    <Supplier
+         class="test  border border-primary rounded-pill py-3 mb-4 mx-5 border-left-0 border-right-0"
+                  :key="supplier.id"
+                  v-for="supplier in suppliers"
+                  :name="supplier.name"
+                  :status="supplier.status"
+                  :checkedAt="supplier.checkedAt"
+        >{{value}}:{{key}}</Supplier>
     </div>
 </template>
 <script>
+import Supplier from "./Supplier";
+import { format } from 'timeago.js';
 
 export default {
     name: 'SuppliersList',
 
     components: {
-        Supplier:{
-
+        Supplier
+    },
     data: function () {
         return {
             suppliers: [
@@ -20,13 +28,13 @@ export default {
                     id: 1,
                     name: "Fournisseur 1 ?",
                     status: true,
-                    checkedAt: new Date()
+                    checkedAt:  format(Date(1544666010224))
                 },
                 {
                     id: 2,
                     name: "Fournisseur 2",
                     status: false,
-                    checkedAt: new Date()
+                    checkedAt:  format(Date(1544666010224))
                 }
             ],
 
@@ -37,7 +45,7 @@ export default {
             //     new Date() //date de la dernière mise à jour du stock
         }
     }
-    }
+
 }
-}
+
 </script>
