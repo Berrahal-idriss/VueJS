@@ -8,7 +8,7 @@
                   :name="supplier.name"
                   :status="supplier.status"
                   :checkedAt="supplier.checkedAt"
-        >{{value}}:{{key}}</Supplier>
+        ></Supplier>
     </div>
 </template>
 <script>
@@ -33,7 +33,7 @@ export default {
                 {
                     id: 2,
                     name: "Fournisseur 2",
-                    status: false,
+                    status: true,
                     checkedAt:  format(Date(1544666010224))
                 }
             ],

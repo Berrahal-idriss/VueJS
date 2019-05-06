@@ -10,11 +10,14 @@
 <script>
 export default{
     props: {
+        id:
+        Number,
         name: String,
         status:
         Boolean, //est ce qu'il y a du stock
         checkedAt:
-        Function //date de la dernière mise à jour du stock
+        String //date de la dernière mise à jour du stock
+
 
     }
 }
